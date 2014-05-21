@@ -11,23 +11,21 @@
             <h1>おみくじ<h1>
             <%
             int unse = (int)Math.random()*10;
+            String unse1;
+            String kome;
             if(unse >= 7){
-            %>
-            <h1>大吉！<h1><br>
-            ついてるねー。
-            <%
+                unse1 = "大吉！";
+                kome = "ついてるねー。";
             }else if(unse >=4){
-            %>
-            <h1>中吉！<h1><br>
-            まあまあやねー。
-            <%
-            }else {
-            %>
-            <h1>小吉！<h1><br>
-            ぷっ。どんまい（笑）
-            <%
+                unse1 = "中吉！";
+                kome = "まあまあやねー。";
+            }else{
+                unse1 = "小吉！";
+                kome = "ぷっ。どんまい（笑）";
             }
             %>
+            <h1><%= unse1 %><h1><br>
+            <%= kome %>
             <center>
         </body>
 </html>
