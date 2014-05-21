@@ -10,7 +10,7 @@
             <center>
             <h1>おみくじ<h1>
             <%
-            int unse = (int)Math.random()*10;
+            int unse = (int)(Math.random()*10);
             String unse1;
             String kome;
             if(unse >= 7){
